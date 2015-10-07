@@ -1,0 +1,57 @@
+Initialisierungsdatei fuer Programm HDMODEL, d.h. fuer Routine GLOBINP auf LAKE:
+
+IQUE  : Kommentarvariable ( 0 = Kein Kommentar )
+0
+IOUT  : Switch for averaging interval of HD model output: 1=30d, 2=10d, 3=7d, 5=monthly
+5
+IBASE : Baseflow AN (1) oder AUS (0)
+1
+ISREAD: Initialisierung der Speicherfelder: 0 = AUS, sonst AN
+1
+IOCEAN: Schliessen des Wasserbudgets wegen Ocean-Kopplung: 0 = AUS, sonst AN
+0
+UFAKRU: Unit factor applied to input arrays RUNOFFF and DRAIN (REMO --> mm/day)
+1.
+ISWRIT: time step for writing a restart file (0 = No)
+1
+NSTEP : Number of time steps (days) the model should run 4749
+12414
+JAHR1 : First simulation year 1996 1989
+1979
+JAHR2 : First simulation month 0 10 etc.
+10
+JAHR3 : First simulation day 0, 1, ..., 31 etc.
+1
+ISOLOG: Log file output into ASCII file iso.dat (0=No,7 = Elbe, 8 = Orange and Congo outflow)
+100
+TDNRUN: File name of SRV file with runoff input time series proc/runoff.srv input/runoffbin.dat
+src/rtm_offline/input/runoff.srv
+TDNBAS: File name of SRV file with drainage input time series proc/drainage.srv input/drainagebin.dat
+src/rtm_offline/input/drainage.srv
+TDNPAR: File name of HD model parameter file, incl. Land mask, RDF,....
+src/rtm_offline/input/hdpara_little.srv
+TDNRES: File name of HD model restart file 
+hd_rst.nc
+TDNINI: File name of HD model initialization file
+hd_ini_fixed.nc
+TDNOUT: File name of HD model output file
+hd_dis.nc
+TDNOLM: Dateiname der binaeren Ocean-Atmosphere-Landseemaske, not required
+T106_geco1_LSM.srv
+FLLOG1: Longitude for outflow box 1 for ISOLOG=100, VOLGA
+48.0
+FBLOG1: Latitude for outflow box 1 for ISOLOG=100
+46.5
+FLLOG2: Longitude for outflow box 2 for ISOLOG=100, KURA
+51.5
+FBLOG2: Latitude for outflow box 2 for ISOLOG=100
+48.0
+FLLOG3: Longitude for outflow box 3 for ISOLOG=100, URAL
+49.25
+FBLOG3: Latitude for outflow box 3 for ISOLOG=100
+38.75
+FLLOG4: Longitude for outflow box 4 for ISOLOG=100, TEREK
+47.31
+FBLOG4: Latitude for outflow box 4 for ISOLOG=100
+43.31
+The End
