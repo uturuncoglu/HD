@@ -58,6 +58,7 @@
 !     Open input files 
 !-----------------------------------------------------------------------
 !
+#ifndef CPL
       open(lurun, file=trim(dnrun),  form='unformatted',                &
            status='old', iostat=ios)
       if (ios /= 0) then
@@ -71,6 +72,7 @@
         write(*,*) '[error] -- file '//trim(dnbas)//' could not opened!'
         stop
       end if
+#endif
 !
 !-----------------------------------------------------------------------
 !     Allocate variables 
