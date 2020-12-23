@@ -1,5 +1,5 @@
 FC = ifort -O3 -fp-model precise -fp-model source -DCPL
-NETCDF=/home/netapp/clima-users/users/uturunco/progs/netcdf-4.3.0
+NETCDF=/usr/local
 FCFLAGS = -I$(NETCDF)/include
 CPPFLAGS = -L$(NETCDF)/lib -lnetcdf -lnetcdff
 APP = hdmain.x

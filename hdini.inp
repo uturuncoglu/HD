@@ -14,8 +14,8 @@ UFAKRU: Unit factor applied to input arrays RUNOFFF and DRAIN (REMO --> mm/day)
 1.
 ISWRIT: time step for writing a restart file (0 = No)
 1
-NSTEP : Number of time steps (days) the model should run 4749
-12414
+NSTEP : Number of time steps (days) the model should run 4749 / 12414
+12783
 JAHR1 : First simulation year 1996 1989
 1979
 JAHR2 : First simulation month 0 10 etc.
@@ -25,17 +25,17 @@ JAHR3 : First simulation day 0, 1, ..., 31 etc.
 ISOLOG: Log file output into ASCII file iso.dat (0=No,7 = Elbe, 8 = Orange and Congo outflow)
 100
 TDNRUN: File name of SRV file with runoff input time series proc/runoff.srv input/runoffbin.dat
-src/rtm_offline/input/runoff.srv
+input/rtm/runoff_Tzero.srv
 TDNBAS: File name of SRV file with drainage input time series proc/drainage.srv input/drainagebin.dat
-src/rtm_offline/input/drainage.srv
+input/rtm/drainage_Tzero.srv
 TDNPAR: File name of HD model parameter file, incl. Land mask, RDF,....
-src/rtm_offline/input/hdpara_little.srv
+input/rtm/hdpara_little.srv
 TDNRES: File name of HD model restart file 
-hd_rst.nc
+output/hd_rst.nc
 TDNINI: File name of HD model initialization file
-hd_ini_fixed.nc
+input/rtm/hd_ini_fixed.nc
 TDNOUT: File name of HD model output file
-hd_dis.nc
+output/hd_dis.nc
 TDNOLM: Dateiname der binaeren Ocean-Atmosphere-Landseemaske, not required
 T106_geco1_LSM.srv
 FLLOG1: Longitude for outflow box 1 for ISOLOG=100, VOLGA
